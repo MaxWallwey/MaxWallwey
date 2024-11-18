@@ -1,11 +1,11 @@
 import React from "react";
 import "./globals.css";
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Montserrat, Roboto_Mono } from "next/font/google";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-montserrat",
 });
 
 const roboto_mono = Roboto_Mono({
@@ -20,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto_mono.variable}`}>
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${roboto_mono.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

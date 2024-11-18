@@ -14,7 +14,8 @@ module.exports = {
         darkgray: "#121212",
       },
       fontFamily: {
-        sans: ['"PT Sans"', "sans-serif"],
+        sans: ["var(--font-montserrat)"],
+        mono: ["var(--font-roboto-mono)"],
       },
       screens: {
         sm: "480px",

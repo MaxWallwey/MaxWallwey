@@ -8,14 +8,17 @@ export default function Page() {
           position: "sticky",
           height: "100px",
           width: "100%",
-          fontSize: "40px",
+          fontSize: "70px",
           fontWeight: "bold",
+          fontStyle: "",
         }}
+        className="font-sans"
       >
-        Max Wallwey
+        <div>MAX WALLWEY</div>
       </header>
       <body>
-        <h1>This is the body</h1>
+        <h3>This is the body</h3>
+        <div>Content</div>
       </body>
     </>
   );
