@@ -1,11 +1,14 @@
-import React from 'react';
-import { Navbar } from '../../src/components/Navbar';
+import React from "react";
+import { Navbar } from "../../src/components/Navbar";
+import { About } from "../../src/components/About";
 
-export default function About() {
+export default function AboutPage() {
   return (
-    <>
-      <Navbar />
-      <h1>About me!</h1>
-    </>
+    <body className="min-h-screen bg-black">
+      <header className="sticky">
+        <Navbar />
+      </header>
+      <About />
+    </body>
   );
 }
