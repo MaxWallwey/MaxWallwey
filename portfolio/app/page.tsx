@@ -4,11 +4,11 @@ import { Home } from '../src/components/Home';
 
 export default function Homepage() {
   return (
-    <>
-      <header>
+    <body  className='min-h-screen bg-black'>
+      <header className='sticky'>
         <Navbar />
-        <Home />
       </header>
-    </>
+      <Home />
+    </body>
   );
 }

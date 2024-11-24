@@ -8,11 +8,12 @@ export const Navbar: React.FC = () => {
   
   return (
     <div
-      className='flex justify-center mt-3 text-xl'
+      className='flex justify-center mt-5 text-xl'
     >
-      <div className='bg-white border-2 border-solid border-black rounded-full'>
-        <a className={pathName==='/' ? 'mx-3 font-semibold' : 'mx-3 hover:font-semibold'} href='/'>Home</a>
-        <a className={pathName==='/about' ? 'mx-3 font-semibold' : 'mx-3 hover:font-semibold'} href='/about'>About</a>
+      <div className='bg-black border-2 border-solid border-white rounded-full'>
+        <a className={pathName==='/' ? 'mx-3 font-semibold text-white' : 'mx-3 hover:font-semibold text-white'} href='/'>Home</a>
+        <a className={pathName==='/about' ? 'mx-3 font-semibold text-white' : 'mx-3 hover:font-semibold text-white'} href='/about'>About</a>
+        {/* {pathName === '/wedding' ? (<a className='mx-3 font-semibold text-white' href='/wedding'>Wedding</a>) : (<></>)} */}
       </div>
     </div>
   );
