@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from '../../src/components/Navbar';
 
-export default function Me() {
+export default function About() {
   return (
     <>
       <Navbar />
