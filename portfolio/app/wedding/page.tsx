@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Navbar } from "../../src/components/Navbar";
 
 export default function WeddingOverview() {
   return (
-    <body>
+    <body className="min-h-screen bg-white">
+      <header className="sticky">
+        <Navbar />
+      </header>
     </body>
   );
 }
