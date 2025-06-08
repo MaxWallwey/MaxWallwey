@@ -1,28 +1,32 @@
-import NextImage from 'next/image';
+import Image from 'next/image';
 import React from 'react';
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 export const Wedding: React.FC = () => {
   return (
     <>
-      <Flex justify="center">
-        <Image asChild>
-          <NextImage
-            src="/img/portrait.png"
-            alt="Portrait of the bride and groom"
-            width="800"
-            height="100"
-          />
-        </Image>
-      </Flex>
-      <Image asChild>
-        <NextImage
-          src="/img/andrea.png"
-          alt="Alissa"
-          width="100"
+      <Flex justify="center" mt="5" mb="5">
+        <Image
+          src="/img/wedding/portrait.png"
+          alt="Portrait of the bride and groom"
+          width="800"
           height="100"
         />
-      </Image>
+      </Flex>
+      <Flex justify="center" mt="5" mb="5">
+        <Image
+          src="/img/wedding/another_one_bites_the_dust.png"
+          alt="Portrait of the bride and groom"
+          width="200"
+          height="100"
+        />
+        <Image
+          src="/img/wedding/alissa.png"
+          alt="Portrait of the bride and groom"
+          width="200"
+          height="100"
+        />
+      </Flex>
     </>
   );
 };
