@@ -4,11 +4,11 @@ import React from 'react';
 export const About: React.FC = () => {
   return (
     <>
-      <div className="mt-10 flex justify-center text-white text-xl">
+      <div className="mt-10 flex justify-center text-black text-xl">
         <Head>About me</Head>
         About me
       </div>
-      <div className="flex text-white">
+      <div className="flex text-black">
         <p className="mt-5 mx-10">
           I'm a software engineer <br />
           currently based in the UK. <br />

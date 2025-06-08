@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from '../../src/components/Navbar';
+import { Wedding } from '../../src/components/Wedding';
 
 export default function WeddingOverview() {
   return (
@@ -7,6 +8,7 @@ export default function WeddingOverview() {
       <header className="sticky">
         <Navbar />
       </header>
+      <Wedding />
     </body>
   );
 }
