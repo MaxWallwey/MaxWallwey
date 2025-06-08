@@ -6,9 +6,6 @@ export const Home: React.FC = () => {
       <div className="mt-20 flex justify-center text-black text-6xl">
         Max Wallwey
       </div>
-      <div className="mt-10 flex justify-center text-black text-lg">
-        Software Engineer
-      </div>
     </>
   );
 };

@@ -9,12 +9,7 @@ export const About: React.FC = () => {
         About me
       </div>
       <div className="flex text-black">
-        <p className="mt-5 mx-10">
-          I'm a software engineer <br />
-          currently based in the UK. <br />
-          I was born in Germany and moved <br />
-          to Sheffield to pursue a degree in Physics.
-        </p>
+        <p className="mt-5 mx-10"></p>
       </div>
     </>
   );
