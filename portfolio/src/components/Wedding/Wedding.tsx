@@ -15,6 +15,14 @@ export const Wedding: React.FC = () => {
           />
         </Image>
       </Flex>
+      <Image asChild>
+        <NextImage
+          src="/img/andrea.png"
+          alt="Alissa"
+          width="100"
+          height="100"
+        />
+      </Image>
     </>
   );
 };
