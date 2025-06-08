@@ -5,6 +5,7 @@
   "javascript.preferences.quoteStyle": "single",
   "typescript.format.semicolons": "insert",
   "typescript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true,
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
