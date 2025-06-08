@@ -1,7 +1,7 @@
-import React from "react";
-import { Navbar } from "../src/components/Navbar";
-import { Home } from "../src/components/Home";
-import type { Metadata } from "next";
+import React from 'react';
+import { Navbar } from '../src/components/Navbar';
+import { Home } from '../src/components/Home';
+import type { Metadata } from 'next';
 
 export default function Homepage() {
   return (
@@ -18,5 +18,5 @@ export default function Homepage() {
 }
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: 'Home',
 };

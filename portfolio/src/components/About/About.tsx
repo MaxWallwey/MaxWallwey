@@ -1,5 +1,5 @@
-import Head from "next/head";
-import React from "react";
+import Head from 'next/head';
+import React from 'react';
 
 export const About: React.FC = () => {
   return (
