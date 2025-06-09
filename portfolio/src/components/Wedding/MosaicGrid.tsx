@@ -1,5 +1,6 @@
 import React from 'react';
 import { specialImages, images, videos } from './media';
+import { Spacer } from '@chakra-ui/react';
 
 const MosaicGrid = () => {
   return (
@@ -11,6 +12,8 @@ const MosaicGrid = () => {
               width="750"
               height="500"
               controls
+              preload="auto"
+              playsInline
               className="w-full object-cver rounded-lg"
             >
               <source src={src} type="video/mp4" />
@@ -18,8 +21,10 @@ const MosaicGrid = () => {
           </div>
         ))}
       </div>
-      <div className="mt-5 mb-5 flex justify-center text-black text-3xl">
-        Thank you all for coming to our special day
+      <div className="mb-4 break-inside-avoid pl-4 pr-4 text-3xl flex justify-center">
+        <a>
+          Thank you all for coming to our special day <br />
+        </a>
       </div>
       <div className="mb-4 break-inside-avoid pl-4 pr-4">
         <img src={specialImages[0]} className="w-full object-cver rounded-lg" />
