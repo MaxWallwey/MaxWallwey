@@ -1,6 +1,5 @@
 import React from 'react';
 import { specialImages, images, videos } from './media';
-import { Spacer } from '@chakra-ui/react';
 
 const MosaicGrid = () => {
   return (
@@ -21,14 +20,11 @@ const MosaicGrid = () => {
           </div>
         ))}
       </div>
-      <div className="mb-4 break-inside-avoid pl-4 pr-4 text-3xl flex justify-center">
-        <a>
-          Thank you all for coming to our special day <br />
-        </a>
-      </div>
-      <div className="mb-4 break-inside-avoid pl-4 pr-4">
+      <Divider />
+      <div className="mb-4 mt-4 break-inside-avoid pl-4 pr-4">
         <img src={specialImages[0]} className="w-full object-cver rounded-lg" />
       </div>
+      <Divider />
       <div className="columns-1 sm:columns-2 lg:columns-3 py-10 md:py-20 gap4 pl-4 pr-4">
         {images.map((src, index) => (
           <div key={index} className="mb-4 break-inside-avoid">
@@ -38,6 +34,10 @@ const MosaicGrid = () => {
       </div>
     </>
   );
+};
+
+const Divider = () => {
+  return <hr style={{ borderTop: '4px solid black' }}></hr>;
 };
 
 export default MosaicGrid;
