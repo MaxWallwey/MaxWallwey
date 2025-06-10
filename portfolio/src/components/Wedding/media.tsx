@@ -75,7 +75,7 @@ export const images = [
   '/img/wedding/tilly_outside.png',
   '/img/wedding/uber.png',
   '/img/wedding/wallweys.png',
-  'img/wedding/wall_hartsch.png',
+  '/img/wedding/wall_hartsch.png',
   '/img/wedding/will_max.png',
   '/img/wedding/will_thorsten_cheeky.png',
   '/img/wedding/will_thorsten.png',
