@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches-ignore: [gh-pages]
+    paths-ignore: ['*.md', '*.yml', '*.yaml']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: yarn
+      - name: Install node_modules
+        run: yarn install
+      - name: Build NextJS
+        run: yarn build
+        env:
+          PAGE_PASSWORD: ${{ secrets.PAGE_PASSWORD }}
