@@ -30,7 +30,7 @@ export const Navbar: React.FC = () => {
           About
         </a>
 
-        <a
+        {/* <a
           className={
             pathName === '/wedding'
               ? 'mx-3 font-semibold text-black'
@@ -39,7 +39,7 @@ export const Navbar: React.FC = () => {
           href="/wedding"
         >
           Wedding
-        </a>
+        </a> */}
       </div>
     </div>
   );
