@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache-dependency-path: portfolio/package-lock.json
-          node-version: 16.x
+          node-version: 20.x
           cache: yarn
       - name: Install node_modules
         run: yarn install
