@@ -18,7 +18,9 @@ jobs:
           cache: yarn
       - name: Install node_modules
         run: yarn install
+        working-directory: portfolio
       - name: Build NextJS
         run: yarn build
+        working-directory: portfolio
         env:
           PAGE_PASSWORD: ${{ secrets.PAGE_PASSWORD }}
